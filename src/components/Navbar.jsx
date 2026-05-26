@@ -1,13 +1,15 @@
 import './Navbar.css'
-import { A , useLocation} from '@solidjs/router'
+import { A, useLocation } from '@solidjs/router'
+import Logo from '../assets/Logo.png'
 
-function Navbar(){
+function Navbar() {
     const location = useLocation();
     return <>
         <div class="navbar-container">
-            
+
             <Show when={location.pathname === "/" || location.pathname === "/login" || location.pathname === "/register"}>
-                <div>
+                <div class="navbar-brand">
+                    <img src={Logo} alt="TaskFlow Logo" />
                     <A href='/' class="logo">TaskFlow</A>
                 </div>
                 <div>
@@ -16,8 +18,9 @@ function Navbar(){
                 </div>
             </Show>
             <Show when={location.pathname === "/tasklist" || location.pathname === "/profile" || location.pathname === "/calendar"}>
-                <div style="margin-left: 10px">
-                    TaskFlow
+                <div class="navbar-brand">
+                    <img src={Logo} alt="TaskFlow Logo" />
+                    <span class="logo">TaskFlow</span>
                 </div>
                 <div>
                     <A href='/tasklist'>Task List</A>
@@ -25,7 +28,7 @@ function Navbar(){
                     <A href='/profile'>Nama User</A>
                 </div>
             </Show>
-            
+
         </div>
     </>
 }

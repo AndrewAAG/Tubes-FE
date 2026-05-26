@@ -1,29 +1,84 @@
-.searchbar-container{
-    display: flex;
-    gap: 20px;
-    width: 100%;
-    justify-content: space-between;
+.searchbar-container {
+  display: flex;
+  gap: var(--space-md);
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  animation: fadeSlideUp 0.5s ease-out 0.05s both;
 }
 
-.searchbar-container > input{
-    width: 500px;
+.searchbar-container>input {
+  flex: 1;
+  min-width: 200px;
+  padding: 11px var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  background: var(--color-surface);
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-xs);
 }
+
+.searchbar-container>input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-glow);
+  background: #fff;
+}
+
+.searchbar-container>input::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* --- Dropdown Filters --- */
 
 .dropdown-container {
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 4px;
-    padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 9px var(--space-md);
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-xs);
+}
+
+.dropdown-container:hover {
+  border-color: var(--color-primary);
 }
 
 .dropdown-label {
-    font-weight: bold;
-    color: #333;
-    margin-right: 5px;
+  font-weight: 600;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
 }
 
 .dropdown-select {
-    border: none;
-    outline: none;
-    cursor: pointer;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text);
+  background: transparent;
+  padding-right: 4px;
+}
+
+/* --- Animations --- */
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
