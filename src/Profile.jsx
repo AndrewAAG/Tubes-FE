@@ -19,7 +19,7 @@ function Profile(){
                     </div>
                     <div class="stats-card">
                         <p class="number">2</p>
-                        <p>Done</p>
+                        <p class="measure">Done</p>
                     </div>
                     <div class="stats-card">
                         <p class="number">4</p>

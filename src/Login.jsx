@@ -13,7 +13,7 @@ function Login(){
                 <input type="text" id="password"/>
                 <A href="/tasklist" style="color: black"> <button> Log in </button> </A>
             </div>
-            <p>Don’t have an account? <A href="/register" style="color: black; text-decoration: underline">Create One</A> </p>
+            <p>Don’t have an account? <A href="/register">Create One</A> </p>
         </div>
     </>
 }

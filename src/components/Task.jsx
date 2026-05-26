@@ -3,14 +3,14 @@ import './Task.css'
 function Task(){
     return <>
         <div class="task-container">
-            <div>On Going</div>
-            <div>
+            <div class="status">On Going</div>
+            <div class="task-content">
                 <p>Title</p>
                 <p>Description</p>
             </div>
-            <div> Kuliah </div>
-            <p>Tanggal</p>
-            <div>Priority</div>
+            <div class="tag"> Kuliah </div>
+            <p class="date">Tanggal</p>
+            <div class="priority">Priority</div>
         </div>
     </>
 }

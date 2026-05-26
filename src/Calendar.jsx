@@ -23,6 +23,7 @@ function Calendar(){
                 {id: 1, title: "Dummy Task"},
                 {id: 2, title: "Dummy Task 2"},
                 {id: 2, title: "Dummy Task 3"},
+                {id: 2, title: "Dummy Task 3"},
             ]
         });
     }

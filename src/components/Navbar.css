@@ -1,82 +1,31 @@
-.navbar-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--color-navbar-bg);
-  color: var(--color-navbar-text);
-  height: 64px;
-  padding: 0 var(--space-xl);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0f0f1a;
+    height: 64px;
+    padding: 0 32px;
+    font-size: 13px;
+}
+.logo{
+    margin-left: 10px;
+    color: #e2e4ea;
+}
+A{
+    margin-right: 10px;
+    text-decoration: none;
+    color: #e2e4ea;
 }
 
-/* --- Logo & Brand --- */
-
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
+.navbar-brand{
+    display: flex;
+    align-items: center;
 }
-
-.navbar-brand img {
+.navbar-container img {
   height: 30px;
   width: 30px;
-  object-fit: contain;
-  filter: brightness(1.2);
-  transition: transform var(--transition-fast);
 }
 
-.navbar-brand:hover img {
-  transform: rotate(-8deg) scale(1.08);
-}
-
-.logo {
-  font-weight: 700;
-  font-size: var(--font-size-lg);
+.navbar-container A:hover {
   color: #fff;
-  letter-spacing: -0.3px;
-}
-
-/* --- Nav Links --- */
-
-.navbar-container a {
-  margin-left: var(--space-lg);
-  font-size: var(--font-size-sm);
-  font-weight: 500;
-  color: var(--color-navbar-text);
-  position: relative;
-  padding: var(--space-xs) 0;
-  transition: color var(--transition-fast);
-}
-
-.navbar-container a::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--color-primary);
-  border-radius: var(--radius-full);
-  transition: width var(--transition-base);
-}
-
-.navbar-container a:hover {
-  color: #fff;
-}
-
-.navbar-container a:hover::after {
-  width: 100%;
-}
-
-.navbar-brand a::after {
-  display: none;
-}
-
-.navbar-brand a {
-  margin-left: 0;
 }

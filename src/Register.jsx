@@ -15,7 +15,7 @@ function Register(){
                 <input type="text" id="password"/>
                 <button>Create Account</button>
             </div>
-            <p>Already a member? <A href="/login" style="color: black; text-decoration: underline">Login</A> </p>
+            <p>Already a member? <A href="/login">Login</A> </p>
         </div>
     </>
 }
