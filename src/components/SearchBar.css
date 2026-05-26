@@ -1,0 +1,29 @@
+.searchbar-container{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.searchbar-container > input{
+    width: 500px;
+}
+
+.dropdown-container {
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.dropdown-label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+}
+
+.dropdown-select {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

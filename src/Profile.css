@@ -1,0 +1,50 @@
+.profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.content-container{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user-info{
+    border: 2px solid black;
+    text-align: center;
+    height: 250px;
+}
+
+svg{
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.user-stats{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats-card{
+    border: 1px solid black;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+}
+
+.number{
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.content-container > A{
+    align-self: flex-end;
+    margin-right: 0;
+}
+
+

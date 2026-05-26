@@ -1,0 +1,34 @@
+.tasklist-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding: 0 180px;
+    gap:20px;
+}
+
+
+.tasklist-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tasklist-header > button{
+    height: 50px;
+    width: 150px;
+}
+
+.tasklist-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.pagination-container{
+    display: flex;
+    gap:5px;
+}

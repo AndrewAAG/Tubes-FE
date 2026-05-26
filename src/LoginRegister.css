@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.form{
+    background-color: #969595;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 30px;
+    height: fit-content;
+}
+
+
+

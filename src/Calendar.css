@@ -1,0 +1,32 @@
+.calendar-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 0 180px;
+    gap:20px;
+}
+
+.calendar-content{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.calendar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.weekday-label{
+    text-align: center;
+}
