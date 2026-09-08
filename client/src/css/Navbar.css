@@ -1,0 +1,55 @@
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0f0f1a;
+    height: 64px;
+    padding: 0 32px;
+    font-size: 13px;
+}
+.logo{
+    margin-left: 10px;
+    color: #e2e4ea;
+}
+A{
+    margin-right: 10px;
+    text-decoration: none;
+    color: #e2e4ea;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+}
+.navbar-container img {
+  height: 30px;
+  width: 30px;
+}
+
+.navbar-container A:hover {
+  color: #fff;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background-color: white;
+  color: black;
+  border-radius: 16px;
+  padding: 6px 12px;
+}
+
+.profile > svg{
+    height: 20px;
+    width: 20px;
+    margin: 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
